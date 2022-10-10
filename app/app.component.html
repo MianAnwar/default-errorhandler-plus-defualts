@@ -1,0 +1,16 @@
+<button (click)="testLoggingService()">Test LoggingService</button>
+<button (click)="testMyGlobalErrorHandler()">Test MyGlobalErrorHandler</button>
+<button (click)="testMyGlobalErrorHandlerOnService()">Test MyGlobalErrorHandlerOnService</button>
+<button (click)="testUserServiceUsingFromfetch()">Test RxjsUserService UsingFromfetch</button>
+<button (click)="testUserServiceUsingSimpleAjax()">Test RxjsUserService SimpleAjax</button>
+
+
+<br/><hr/>
+
+<input id="name" type="text" [(ngModel)]="name" (change)="onChange()" placeholder="Type a username..." />
+
+<div *ngIf="profile">
+  <img src="{{profile.avatar_url}}" style="width: 150px">
+  <div>Name: {{profile.login}}</div>
+  <div>Location: {{profile.location}}</div>
+</div>
